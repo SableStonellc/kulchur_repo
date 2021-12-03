@@ -1,0 +1,129 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-size: 18px;
+	font-family: "Oswald", sans-serif;
+}
+
+body {
+	background-image: url("../images/marble.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 100vh;
+}
+
+h2 {
+	font-size: 2.2rem;
+}
+
+h3 {
+	font-size: 1.2em;
+}
+
+h4 {
+	font-size: 1rem;
+}
+
+span {
+	font-size: 0.8rem;
+}
+
+/* Header Styling */
+.header {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Link Stying */
+
+a:link {
+	color: whitesmoke;
+}
+
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: #018ff9;
+}
+.links {
+	padding: 5px;
+	font-size: 1.2em;
+	text-decoration: none;
+}
+
+/* "Logo" Styling */
+
+.logo-font {
+	margin: 2rem;
+	padding: 0.6rem;
+}
+.kulchur {
+	font-family: "Kaushan Script";
+	font-size: 2em;
+}
+
+.featured-nft {
+	width: 30vw;
+	height: auto;
+	-webkit-box-reflect: below 2px
+		linear-gradient(transparent, transparent, #0004);
+	transform-origin: center;
+	transform: perspective(800px) rotateY(-25deg);
+	transition: 0.5s;
+}
+
+.nft-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.artist-container {
+	/* width: 100vw; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.artist-info {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.top-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+}
+.bottom-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* Footer styling */
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 2rem;
+}
+
+.footer-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0.9rem;
+}

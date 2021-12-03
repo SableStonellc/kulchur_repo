@@ -6,11 +6,10 @@
 	box-sizing: border-box;
 	font-size: 18px;
 	font-family: "Oswald", sans-serif;
-	/* border: 2px solid black; */
 }
 
 body {
-	background-image: url("images/marble.jpg");
+	background-image: url("/images/marble.jpg");
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -19,30 +18,44 @@ body {
 }
 
 h2 {
-	font-size: 3rem;
+	font-size: 2.2rem;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 1.2em;
 }
 
 h4 {
 	font-size: 1rem;
 }
 
-/* Nav Styling */
-.nav {
+span {
+	font-size: 0.8rem;
+}
+
+/* Header Styling */
+.header {
 	display: flex;
 	justify-content: space-between;
 }
 
-.nav-links {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-right: 2rem;
+/* Link Stying */
+
+a:link {
+	color: whitesmoke;
 }
 
+a:visited {
+	color: gray;
+}
+
+a:hover {
+	color: black;
+}
+
+a:active {
+	color: #018ff9;
+}
 .links {
 	padding: 5px;
 	font-size: 1.2em;
@@ -70,11 +83,22 @@ h4 {
 
 .hero-left {
 	display: flex;
-	justify-content: center;
-	align-items: center;
+	flex-direction: column;
 	padding: 5rem;
 }
 
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button {
+	margin: 5vh;
+}
+.button-text {
+	padding: 8px;
+}
 .hero-right {
 	display: flex;
 	justify-content: center;
@@ -102,6 +126,7 @@ h4 {
 
 .artist-header {
 	font-family: "Kaushan Script", cursive;
+	font-size: 2.3rem;
 }
 .artist {
 	width: 70%;
@@ -136,12 +161,14 @@ img {
 .card-container {
 	/* max-width: 600px;
 	max-height: 350px; */
-	margin: 2rem;
-	padding: 2rem;
+
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	gap: 25px;
+	margin: 2rem;
+	margin-bottom: 2.3rem;
+	padding: 2rem;
 }
 
 .card-container:hover img,
@@ -152,6 +179,23 @@ img {
 .hero-right:hover img {
 	transform: perspective(800px) rotateY(0deg);
 	opacity: 1;
+}
+
+/* Footer styling */
+
+.nav-links {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-right: 2rem;
+}
+
+.footer-copy {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0.9rem;
 }
 
 Media queries {
