@@ -41,6 +41,7 @@ span {
 
 a:link {
 	color: whitesmoke;
+	text-decoration: none;
 }
 
 a:visited {
@@ -54,10 +55,67 @@ a:hover {
 a:active {
 	color: #018ff9;
 }
+
 .links {
 	padding: 5px;
 	font-size: 1.2em;
 	text-decoration: none;
+}
+
+.logo-font {
+	text-decoration: none;
+}
+
+.css-button-neumorphic {
+	min-width: 120px;
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	background: #efefef;
+	box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+	color: #585858;
+}
+.css-button-neumorphic:hover {
+	box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+.socialite-button {
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	background: #efefef;
+	box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+	color: #585858;
+}
+.socialite-button:hover {
+	box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+.button-text {
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.gallery-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* "Logo" Styling */
@@ -71,6 +129,21 @@ a:active {
 	font-size: 2em;
 }
 
+/* NFT Img Styling */
+
+img {
+	width: 25%;
+	height: 100%;
+	object-fit: cover;
+	border-radius: 5px;
+
+	-webkit-box-reflect: below 2px
+		linear-gradient(transparent, transparent, #0004);
+	transform-origin: center;
+	transform: perspective(800px) rotateY(25deg);
+	transition: 0.5s;
+}
+
 .featured-nft {
 	width: 30vw;
 	height: auto;
@@ -81,36 +154,61 @@ a:active {
 	transition: 0.5s;
 }
 
+.nft-container:hover img {
+	opacity: 0.3;
+}
+
+.nft-container:hover img {
+	transform: perspective(800px) rotateY(0deg);
+	opacity: 1;
+}
+
+/* Artist Info Styling */
+
 .nft-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
-.artist-container {
+.artist-info-container {
 	/* width: 100vw; */
 	display: flex;
+	justify-content: center;
+	margin: 2.5rem;
+}
+.artist-details-container {
+	display: flex;
 	flex-direction: column;
-	justify-content: center;
+	justify-content: space-around;
 	align-items: center;
 }
-.artist-info {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.top-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
-}
-.bottom-container {
+
+.social-container {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	height: 85%;
+	width: auto;
+}
+
+.about-links {
+	display: flex;
+	justify-content: space-around;
+}
+
+.single-social-container {
+	margin: 5vw;
+}
 /* Footer styling */
 
 .nav-links {

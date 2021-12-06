@@ -6,6 +6,7 @@
 	box-sizing: border-box;
 	font-size: 18px;
 	font-family: "Oswald", sans-serif;
+	text-decoration: none;
 }
 
 body {
@@ -15,6 +16,10 @@ body {
 	background-size: cover;
 	width: 100%;
 	min-height: 100vh;
+}
+
+h1 {
+	font-size: 2.8rem;
 }
 
 h2 {
@@ -56,6 +61,7 @@ a:hover {
 a:active {
 	color: #018ff9;
 }
+
 .links {
 	padding: 5px;
 	font-size: 1.2em;
@@ -80,8 +86,39 @@ a:active {
 	box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
 	color: #585858;
 }
-.css-button-neumorphic:active {
+.css-button-neumorphic:hover {
 	box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+.socialite-button {
+	height: 40px;
+	color: #fff;
+	padding: 5px 10px;
+	font-weight: bold;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	position: relative;
+	display: inline-block;
+	outline: none;
+	border-radius: 5px;
+	border: none;
+	background: #efefef;
+	box-shadow: 2px 2px 4px #c8d0e7, -1px -1px 3px #fff;
+	color: #585858;
+}
+.socialite-button:hover {
+	box-shadow: inset 1px 1px 3px #c8d0e7, inset -1px -1px 3px #fff;
+}
+
+.button-text {
+	font-size: 1.2rem;
+	text-decoration: none;
+}
+
+.gallery-button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 /* "Logo" Styling */
@@ -89,6 +126,7 @@ a:active {
 .logo-font {
 	margin: 2rem;
 	padding: 0.6rem;
+	text-decoration: none;
 }
 .kulchur {
 	font-family: "Kaushan Script";
@@ -243,4 +281,80 @@ Media queries {
 			padding: 2.5rem;
 		}
 	}
+}
+
+/* Artist Info Styling */
+
+.nft-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.artist-info-container {
+	/* width: 100vw; */
+	display: flex;
+	justify-content: center;
+	margin: 2.5rem;
+}
+.artist-details-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.social-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.button-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.social {
+	height: 85%;
+	width: auto;
+}
+
+/* About Styling */
+
+.about-page-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.about-copy,
+.faq {
+	padding: 5vw;
+}
+
+/* FAQ */
+
+.faq-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: space-between;
+}
+
+.question,
+.answer {
+	padding: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.question {
+	font-size: 1.4rem;
+}
+.answer {
+	font-size: 1rem;
 }
