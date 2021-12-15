@@ -39,6 +39,7 @@ span {
 }
 
 /* Header Styling */
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -68,7 +69,8 @@ a:active {
 	text-decoration: none;
 }
 
-/* Button Style */
+/* Button Styling */
+
 .css-button-neumorphic {
 	min-width: 130px;
 	height: 40px;
@@ -121,7 +123,7 @@ a:active {
 	align-items: center;
 }
 
-/* "Logo" Styling */
+/* Logo Styling */
 
 .logo-font {
 	margin: 2rem;
@@ -144,6 +146,7 @@ a:active {
 .hero-left {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	padding: 5rem;
 }
 
@@ -151,6 +154,16 @@ a:active {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.hero-text-wrap {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero-text {
+	padding: 2rem;
 }
 
 .button {
@@ -229,6 +242,7 @@ img {
 	margin: 2rem;
 	margin-bottom: 2.3rem;
 	padding: 2rem;
+	overflow: hidden;
 }
 
 .card-container:hover img,
@@ -257,6 +271,8 @@ img {
 	align-items: center;
 	margin: 0.9rem;
 }
+
+/* Media Queries */
 
 Media queries {
 	@media only screen and (max-width: 600px) {

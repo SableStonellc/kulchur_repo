@@ -1,3 +1,5 @@
+/* Universal Styling */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -5,6 +7,8 @@
 	font-size: 18px;
 	font-family: "Oswald", sans-serif;
 }
+
+/* Body Styling */
 
 body {
 	background-image: url("../images/marble.jpg");
@@ -32,6 +36,7 @@ span {
 }
 
 /* Header Styling */
+
 .header {
 	display: flex;
 	justify-content: space-between;
@@ -65,6 +70,8 @@ a:active {
 .logo-font {
 	text-decoration: none;
 }
+
+/* Button Styling */
 
 .css-button-neumorphic {
 	min-width: 120px;
@@ -144,6 +151,8 @@ img {
 	transition: 0.5s;
 }
 
+/* Featured NFT Styling */
+
 .featured-nft {
 	width: 30vw;
 	height: auto;
@@ -163,7 +172,11 @@ img {
 	opacity: 1;
 }
 
-/* Artist Info Styling */
+/* Artist Info Styling & Containers */
+
+.artist-copy {
+	width: 80%;
+}
 
 .nft-container {
 	display: flex;
